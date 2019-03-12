@@ -1,0 +1,700 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#"
+     xml:base="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#include -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#include">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#include_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#include_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#include_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#release -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#release">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#released_by"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#released_by -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#released_by">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_introduction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_introduction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_release_date -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_release_date"/>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_birthday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_birthday">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_english_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_english_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_introduction -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_introduction">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#song_content -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#song_content">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#song_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#song_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_release_date"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_introduction"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#album_name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_birthday"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_english_name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_introduction"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#singer_name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#song_content"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#song_name"/>
+                <owl:allValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#JAY -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#JAY">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">JAY</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2000-11-13</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#七里香 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#七里香">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">七里香</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2004-08-03</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#三年二班 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#三年二班">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">三年二班</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#东风破 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#东风破">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">一盏离愁孤单伫立在窗口
+我在门后假装你人还没走
+旧地如重游月圆更寂寞
+夜半清醒的烛火不忍苛责我
+一壶漂泊浪迹天涯难入喉
+你走之后酒暖回忆思念瘦
+水向东流时间怎么偷
+花开就一次成熟我却错过
+谁在用琵琶弹奏一曲东风破
+岁月在墙上剥落看见小时候
+犹记得那年我们都还很年幼
+而如今琴声幽幽我的等候你没听过
+谁在用琵琶弹奏一曲东风破
+枫叶将故事染色结局我看透
+篱笆外的古道我牵着你走过
+荒烟漫草的年头就连分手都很沉默
+一壶漂泊浪迹天涯难入喉
+你走之后酒暖回忆思念瘦
+水向东流时间怎么偷
+花开就一次成熟我却错过
+谁在用琵琶弹奏一曲东风破
+岁月在墙上剥落看见小时候
+犹记得那年我们都还很年幼
+而如今琴声幽幽我的等候你没听过
+谁在用琵琶弹奏一曲东风破
+枫叶将故事染色结局我看透
+篱笆外的古道我牵着你走过
+荒烟漫草的年头就连分手都很沉默
+谁在用琵琶弹奏一曲东风破
+岁月在墙上剥落看见小时候
+犹记得那年我们都还很年幼
+而如今琴声幽幽我的等候你没听过
+谁在用琵琶弹奏一曲东风破
+枫叶将故事染色结局我看透
+篱笆外的古道我牵着你走过
+荒烟漫草的年头就连分手都很沉默</song_content>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">东风破</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#以父之名 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#以父之名">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">微凉的晨露 沾湿黑礼服
+石板路有雾 父在低诉
+吹不散的雾 隐没了意图
+无奈的觉悟 只能更残酷
+一切都为了 通往圣堂的路
+谁轻柔踱步 停住
+还来不及哭 穿过的子弹
+就带走 温度
+我们每个人都有罪 犯着不同的罪
+我能决定谁对 谁又该要沈睡
+争论不能解决 在永无止境的夜
+关掉你的嘴 唯一的恩惠
+挡在前面的人都有罪
+后悔也无路可退 以父之名判决
+那感觉没有适合字
+就像边笑边掉泪 凝视着完全的黑
+阻挡悲剧蔓延的悲剧会让我沉醉
+低头亲吻我的左手 换取被宽恕的承诺
+老旧管风琴在角落 一直一直一直伴奏
+黑色帘幕被风吹动阳光无言的穿透
+洒向那群被我驯服后的 兽
+沉默的喊叫 沉默的喊叫 孤单开始发酵
+不停对着我嘲笑 回忆逐渐延烧
+曾经纯真的画面 残忍的温柔出现
+脆弱时间到 我们一起来祷告
+请原谅我的自负
+仁慈的父我已坠入 看不见罪的国度
+没人能说没人可说 好难承受
+荣耀的背后刻着一道孤独
+闭上双眼我又看见
+当年那梦的画面
+天空是蒙蒙的雾
+父亲牵着我的双手
+轻轻走过 清晨那安安静静的石板路
+低头亲吻我的左手 换取被宽恕的承诺
+老旧管风琴在角落 一直一直一直伴奏
+黑色帘幕被风吹动阳光无言的穿透
+洒向那群被我驯服后的 兽
+沉默的喊叫 沉默的喊叫 孤单开始发酵
+不停对着我嘲笑 回忆逐渐延烧
+曾经纯真的画面 残忍的温柔出现
+脆弱时间到 我们一起来祷告
+仁慈的父我已坠入 看不见罪的国度
+请原谅我的自负
+没人能说没人可说 好难承受
+荣耀的背后刻着一道孤独
+仁慈的父我已坠入 看不见罪的国度
+请原谅我的自负
+仁慈的父我已坠入 看不见罪的国度
+请原谅我的自负
+没人能说没人可说 好难承受
+荣耀的背后刻着一道孤独
+闭上双眼我又看见
+那斑驳的家徽 我擦拭了一夜
+孤独的光辉 我才懂的感觉
+当年那梦的画面
+烛光 不 不 停的 摇晃
+天空是蒙蒙的雾
+猫头鹰在 窗棂上 对着远方眺望
+父亲牵着我的双手
+通向 大厅的长廊 一样 说不出的沧桑
+轻轻走过 清晨那安安静静的石板路
+没有喧嚣 只有宁静围绕
+我 慢慢睡着 天 刚刚破晓
+银光晚餐制作</song_content>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">以父之名</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#你听得到 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#你听得到">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">你听得到</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#依然范特西 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#依然范特西">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">依然范特西</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2006-09-05</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#八度空间 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#八度空间">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">八度空间</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2002-07-18</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#十一月的肖邦 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#十一月的肖邦">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">十一月的肖邦</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2005-11-01</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#双刀 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#双刀">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">双刀</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#三年二班"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#东风破"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#以父之名"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#你听得到"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#双刀"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#同一种调调"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#她的睫毛"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#懦夫"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#晴天"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#梯田"/>
+        <include rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#爱的悬崖"/>
+        <released_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦"/>
+        <album_introduction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">近日转会加盟新公司的周杰伦，同时推出了其年度国语专辑《叶惠美》，收录11首个人独唱歌曲。虽然新碟的惊喜不大，但仍保持着阿Jay一贯的个人风格(其实这正是乐迷最喜欢的)，而且多首歌曲亦较以往更有深度，故此并不算「原地踏步」。再者，当中某几首歌曲，更是惹人钟爱之作，相信这专辑依然会得到不少乐迷支持。</album_introduction>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">叶惠美</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2003-07-31</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#同一种调调 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#同一种调调">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">同一种调调</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌手"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#JAY"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#七里香"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦的床边故事"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#哎哟，不错哦"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#惊叹号"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#我很忙"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#等你下课"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#范特西"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#跨时代"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#摩杰座"/>
+        <release rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#12新作"/>
+        <singer_birthday rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1979年1月18日</singer_birthday>
+        <singer_english_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jay</singer_english_name>
+        <singer_introduction rdf:datatype="http://www.w3.org/2001/XMLSchema#string">著名歌手，音乐人，词曲创作人，编曲及制作人，MV及电影导演。新世纪华语歌坛领军人物，中国风歌曲始祖，被时代周刊誉为“亚洲猫王”，是2000年后亚洲流行乐坛最具革命性与指标性的创作歌手，亚洲销量超过3100万张，有“亚洲流行天王”之称，开启华语乐坛“R&amp;B时代”与“流行乐中国风”的先河，周杰伦的出现打破了亚洲流行乐坛长年停滞不前的局面，为亚洲流行乐坛翻开了新的一页，是华语乐坛真正把R&amp;B提升到主流高度的人物，引领华语乐坛革命整十年，改写了华语乐坛的流行方向。</singer_introduction>
+        <singer_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">周杰伦</singer_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦的床边故事 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦的床边故事">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <released_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#周杰伦"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">周杰伦的床边故事</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-06-24</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#哎哟，不错哦 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#哎哟，不错哦">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">哎哟，不错哦</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2014-12-26</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#她的睫毛 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#她的睫毛">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">她的睫毛</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#惊叹号 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#惊叹号">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">惊叹号</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2011-11-11</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#懦夫 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#懦夫">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">懦夫</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#我很忙 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#我很忙">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">我很忙</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2007-11-01</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#晴天 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#晴天">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_content rdf:datatype="http://www.w3.org/2001/XMLSchema#string">故事的小黄花
+从出生那年就飘着
+童年的荡秋千
+随记忆一直晃到现在
+rui sou sou xi dou xi la
+sou la xi xi xi xi la xi la sou
+吹着前奏望着天空
+我想起花瓣试着掉落
+为你翘课的那一天
+花落的那一天
+教室的那一间
+我怎么看不见
+消失的下雨天
+我好想再淋一遍
+没想到失去的勇气我还留着
+好想再问一遍
+你会等待还是离开
+刮风这天我试过握着你手
+但偏偏雨渐渐大到我看你不见
+还要多久我才能在你身边
+等到放晴的那天也许我会比较好一点
+从前从前有个人爱你很久
+但偏偏风渐渐把距离吹得好远
+好不容易又能再多爱一天
+但故事的最后你好像还是说了拜拜
+为你翘课的那一天
+花落的那一天
+教室的那一间
+我怎么看不见
+消失的下雨天
+我好想再淋一遍
+没想到失去的勇气我还留着
+好想再问一遍
+你会等待还是离开
+刮风这天我试过握着你手
+但偏偏雨渐渐大到我看你不见
+还要多久我才能在你身边
+等到放晴的那天也许我会比较好一点
+从前从前有个人爱你很久
+偏偏风渐渐把距离吹得好远
+好不容易又能再多爱一天
+但故事的最后你好像还是说了拜拜
+刮风这天我试过握着你手
+但偏偏雨渐渐大到我看你不见
+还要多久我才能够在你身边
+等到放晴那天也许我会比较好一点
+从前从前有个人爱你很久
+但偏偏雨渐渐把距离吹得好远
+好不容易又能再多爱一天
+但故事的最后你好像还是说</song_content>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">晴天</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#梯田 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#梯田">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">梯田</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#爱的悬崖 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#爱的悬崖">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#歌曲"/>
+        <include_by rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#叶惠美"/>
+        <song_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">爱的悬崖</song_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#等你下课 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#等你下课">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">等你下课</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018-01-18</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#范特西 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#范特西">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">范特西</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2001-09-21</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#跨时代 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#跨时代">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">跨时代</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2010-05-18</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#摩杰座 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#摩杰座">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">摩杰座</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2008-10-15</album_release_date>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#12新作 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#12新作">
+        <rdf:type rdf:resource="http://www.semanticweb.org/张涛/ontologies/2019/1/untitled-ontology-32#专辑"/>
+        <album_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">12新作</album_name>
+        <album_release_date rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2012-12-28</album_release_date>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.7.2018-12-02T02:23:35Z) https://github.com/owlcs/owlapi -->
+

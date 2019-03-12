@@ -1,0 +1,20 @@
+    @prefix :      <http://base/#> .
+	@prefix tdb:   <http://jena.hpl.hp.com/2008/tdb#> .
+	@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+	@prefix ja:    <http://jena.hpl.hp.com/2005/11/Assembler#> .
+	@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+	@prefix fuseki: <http://jena.apache.org/fuseki#> .
+	
+	<#service3> rdf:type fuseki:Service ;
+		fuseki:name "jay_kbqa" ;	# RDF文件表
+		fuseki:serviceQuery "sparql" ;	 # SPARQL query service
+		fuseki:dataset <#dataset> ;
+		 .
+	
+	<#dataset> rdf:type tdb:DatasetTDB ;
+		tdb:location "D:/apache-jena-fuseki-3.10.0/run/tdb/new_tdb" ;	# tdb数据路径
+		# Query timeout on this dataset (1s, 1000 milliseconds)
+		ja:context [ ja:cxtName "arq:queryTimeout" ;  ja:cxtValue "1000" ] ;
+		# Make the default graph be the union of all named graphs.
+		## tdb:unionDefaultGraph true ;
+		.
