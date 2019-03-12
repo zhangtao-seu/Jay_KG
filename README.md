@@ -7,7 +7,5 @@
 
 &ensp;&ensp;&ensp;&ensp;最后是自然语言处理环节，python通过结巴分词，规则匹配将相应的自然语言转换成SPARQL查询语句，并通过和fuseki通信得到查询结果后通过结果的解析得到最后的答案形式。对于分词等多个文件可以单独的对每个文件的逻辑进行测试，来看懂每个文件所做的工作，也方便debug。<br/></br/>
 
-用户可以通过下载apache-jena和apache-jena-fuseki以及github中的fuseki_conf和歌曲知识图谱.owl文件进行测试，注意修改fuseki_conf中的路径。如果是构建自己的知识图谱问答系统，可以在protege中自己写RDF文件，并使用tdb-loader.bat转换成tdb数据。要有一个单独的tdb文件，因为一个owl会生成一堆文件。在构建自己的知识图谱问答系统时，python文件需要更改的部分主要集中在模板匹配并生成相应的SPARQL查询语句环节，其他部分代码大体相同。<br/><br/>
-
-
+&ensp;&ensp;&ensp;&ensp;用户可以通过下载apache-jena和apache-jena-fuseki以及github中的fuseki_conf和歌曲知识图谱.owl文件进行测试，注意修改fuseki_conf中的路径。如果是构建自己的知识图谱问答系统，可以在protege中自己写RDF文件，并使用tdb-loader.bat转换成tdb数据。要有一个单独的tdb文件，因为一个owl会生成一堆文件。在构建自己的知识图谱问答系统时，python文件需要更改的部分主要集中在模板匹配并生成相应的SPARQL查询语句环节，其他部分代码大体相同。<br/><br/>
 
